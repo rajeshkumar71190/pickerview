@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="so" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Li-Z7-v9y">
+                                <rect key="frame" x="30" y="50" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2w4-7o-TPJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mfu-PH-LCU">
+                                <rect key="frame" x="30" y="190" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Gik-FA-yz5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmQ-TW-Y5r">
+                                <rect key="frame" x="0.0" y="250" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="4Ec-fh-rjw"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8f-Ec-jIu">
+                                <rect key="frame" x="30" y="120" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="i72-iv-vtJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Li-Z7-v9y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7mY-1x-nnG"/>
+                            <constraint firstItem="fmQ-TW-Y5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8dK-eq-MeW"/>
+                            <constraint firstItem="mfu-PH-LCU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="MZd-d2-yAa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B8f-Ec-jIu" secondAttribute="trailing" constant="30" id="QqT-wG-AcU"/>
+                            <constraint firstItem="1Li-Z7-v9y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="S1e-1J-R1m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Li-Z7-v9y" secondAttribute="trailing" constant="30" id="Vkx-R4-dc3"/>
+                            <constraint firstItem="mfu-PH-LCU" firstAttribute="top" secondItem="B8f-Ec-jIu" secondAttribute="bottom" constant="30" id="Y8d-7Y-ysS"/>
+                            <constraint firstItem="B8f-Ec-jIu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="iZL-DD-Jrd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mfu-PH-LCU" secondAttribute="trailing" constant="30" id="nKK-Vw-aZ8"/>
+                            <constraint firstAttribute="trailing" secondItem="fmQ-TW-Y5r" secondAttribute="trailing" id="p3u-6c-Xdc"/>
+                            <constraint firstItem="fmQ-TW-Y5r" firstAttribute="top" secondItem="mfu-PH-LCU" secondAttribute="bottom" constant="20" id="vxD-12-ZLZ"/>
+                            <constraint firstItem="B8f-Ec-jIu" firstAttribute="top" secondItem="1Li-Z7-v9y" secondAttribute="bottom" constant="30" id="wC2-AR-FOD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="fmQ-TW-Y5r" id="8ZW-Yq-0S0"/>
+                        <outlet property="textFiled1" destination="1Li-Z7-v9y" id="2l9-q4-SYe"/>
+                        <outlet property="textFiled2" destination="B8f-Ec-jIu" id="geP-lq-1g4"/>
+                        <outlet property="textFiled3" destination="mfu-PH-LCU" id="dY2-xS-TR6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
