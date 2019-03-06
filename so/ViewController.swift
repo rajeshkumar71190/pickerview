@@ -47,6 +47,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let tempArr = colorsArray.filter { ![textFiled1.text!,textFiled2.text!,textFiled3.text!].contains($0) }
         self.selectedTextField?.text = tempArr[row]
+        pickerView.reloadAllComponents()
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.selectedTextField = textField
